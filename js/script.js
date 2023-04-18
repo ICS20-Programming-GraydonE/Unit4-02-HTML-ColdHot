@@ -6,22 +6,22 @@
 "use strict";
 
   // This function Calculates if it is warm or cold. 
-  function calculate() {
+  function calculate() { 
     
-  // input random number and program feedback
+  // input temperature and set program feedback
   let temperature = parseInt(document.getElementById('temperature').value);
-
+    
   let programFeedback = "" ;
 
   if (temperature > 15) {
     programFeedback = "It is cold";
   }
 
-  if (userNumber <= 15) {
+  if (temperature <= 15) {
     programFeedback = "It is warm";
   }
   
   // output if its warm or cold
-  document.getElementById('program-feedback').innerHTML = programFeedback ;
+  document.getElementById('program-feedback').innerHTML = programFeedback;
   
 }
